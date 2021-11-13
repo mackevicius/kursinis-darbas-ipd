@@ -1,16 +1,17 @@
-Fully functional brand's website (Non-commercial) made with React.js
+Pilnai funkcionuojanti "Fundamental" prekinio ženklo elektroninė parduotuvė
 
-Website hosted on Firebase
+Tinklalapis patalpintas, naudojantis Firebase hosting'u
 
-Live preview: https://fundamental-w.web.app/ 
+Tinklalapi pamatyti galima čia: https://kursinis-b4f6c.web.app/
 
-Website has singnup, signin, sort, filter, search functions
+Tinklalapis turi registravimosi, prisijungimo, rušiavimo, rikiavimo, paieškos funkcijas
 
-Sign up and sign made with Firebase Authentication
+Prisijungimas bei registracija padaryti, naudojantis Firebase Authentication paslauga
 
-Users can add/remove items to/from shopping bag and finally purchase them by paying on PayPal
+Vartotojai gali įdėti patinkančias prekes į krepšelį, iš jo išimti, didinti kieki, na ir galiausiai - nusipirki prekes.
+Apmokėjimas už prekes vykdomas per Paypal ar kreditines korteles.
 
-Website is fully responsive
+Tinklalapis yra visiškai prisitaikantis
 
 
 Used hooks: UseState, UseRef, UseEffect and other custom ones
