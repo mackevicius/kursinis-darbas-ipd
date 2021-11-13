@@ -1,0 +1,388 @@
+/*Global*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  height: 100%;
+}
+html {
+  border: none;
+}
+#root {
+  height: 100%;
+}
+.App {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+
+  /* background: url("./images/background.png") center center no-repeat; */
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+/* Background image*/
+.background-image {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 160px;
+}
+/*Header CSS*/
+
+.header {
+  height: 150px;
+  min-width: 1000px;
+  margin: 0 auto;
+  z-index: 12;
+  position: relative;
+}
+.header-container,
+.header-container ul,
+.icons,
+.search {
+  display: flex;
+}
+.header-container {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header-container ul {
+  list-style-type: none;
+  justify-content: space-between;
+  margin-top: 21px;
+  width: 38%;
+}
+.header-container ul li {
+  font-weight: 500;
+  white-space: nowrap;
+}
+.header-container ul li:hover {
+  cursor: pointer;
+}
+.logo {
+  width: 200px;
+}
+.logo:hover {
+  cursor: pointer;
+}
+.icons {
+  justify-content: space-between;
+  width: 9%;
+}
+.search {
+  width: 25%;
+}
+.search form {
+  width: 100%;
+  position: relative;
+}
+.search input {
+  position: absolute;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-left: 5px;
+  top: 2px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+/*Showcase CSS*/
+.showcase {
+  height: 500px;
+  text-align: center;
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 1000px;
+  overflow: hidden;
+}
+.showcase img {
+  height: 505px;
+  border-radius: 20px;
+}
+.arrows {
+  position: absolute;
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 48%;
+}
+
+.slide {
+  width: 100%;
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.01);
+}
+.icon {
+  z-index: 9;
+}
+
+/*Products*/
+
+.products-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+.product img {
+  width: 100%;
+}
+.products-container .product:first-child {
+  margin-right: 30px;
+}
+.product {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product .btn {
+  position: absolute;
+  top: 80%;
+  width: 250px;
+  background-color: rgb(5, 1, 17);
+  font-size: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+/*About*/
+.about {
+  max-width: 1000px;
+  margin-top: 30px;
+}
+.about .btn {
+  top: 68%;
+}
+
+/*Footer*/
+
+footer {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border: none;
+}
+.footer-container {
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container-item h4 {
+  font-weight: 200;
+  margin-top: 17px;
+  font-size: 1.2rem;
+}
+.footer-container-item.social .icon {
+  width: 30px;
+}
+.footer-container-item.social a {
+  margin-top: 10px;
+}
+.footer-container-item.social .icon:first-child {
+  margin-top: 0;
+}
+footer p {
+  margin-top: 15px;
+  font-size: 0.8rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: white;
+}
+.hamburger-menu {
+  position: fixed;
+  left: -80%;
+  top: 0;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 0 3px #000;
+  opacity: 0;
+  z-index: 13;
+  height: 100%;
+  padding-top: 120px;
+  padding-left: 80px;
+  transition: all 0.15s ease-in;
+}
+.hamburger-menu.clicked {
+  left: 0%;
+  opacity: 1;
+}
+.hamburger-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.8rem;
+}
+.hamburger-menu ul li {
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+}
+.close {
+  position: absolute;
+  top: 30px;
+  left: -17px;
+  color: black;
+}
+
+.hideoverflow {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1020px) {
+  .arrows {
+    width: 70%;
+  }
+  .header,
+  .products-container,
+  .footer-container {
+    width: 100%;
+  }
+  .header,
+  .footer-container {
+    min-width: 0px;
+  }
+  .footer-container-item h4 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .arrows {
+    width: 55%;
+  }
+  .footer-container .icon {
+    transform: scale(0.8);
+  }
+  .footer-container h4 {
+    font-size: 0.7rem;
+  }
+  .hamburger-menu {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .arrows {
+    width: 38%;
+  }
+  .icon {
+    transform: scale(0.8);
+  }
+  .products-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .products-container img {
+    width: 98%;
+  }
+  .products-container .product:first-child {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .background-image {
+    width: 195%;
+  }
+  .about .product img {
+    width: 98%;
+    height: 150px;
+  }
+  .about .btn {
+    top: 60%;
+  }
+  .btn {
+    width: 220px;
+  }
+  .mobile-social {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-social img {
+    width: 45px;
+    margin-top: 10px;
+  }
+  .footer-container h4 {
+    margin-top: 10px;
+  }
+  .showcase img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .background-image {
+    top: 205px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .background-image {
+    width: 250%;
+  }
+  .hamburger-menu.clicked {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about .product img {
+    width: 98%;
+    height: 120px;
+  }
+}

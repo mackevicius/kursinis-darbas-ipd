@@ -1,0 +1,7 @@
+.navbar.product {
+  display: flex;
+  justify-content: space-between;
+}
+.back-button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.forma {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.forma input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}

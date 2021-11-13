@@ -1,0 +1,144 @@
+.about-wrapper {
+  margin-top: 30px;
+  padding: 50px;
+  width: 1000px;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  box-shadow: 0 0 3px #000;
+  padding-bottom: 120px;
+}
+.about-p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  font-style: italic;
+  text-align: left;
+  width: 60%;
+  margin: 40px 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: black;
+}
+
+blockquote span {
+  color: #696969;
+}
+.info-icon {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+}
+.hr {
+  position: relative;
+  width: 100%;
+
+  border: none;
+  height: 0.5px;
+  background-color: #333;
+}
+.hr.top {
+  top: 20px;
+}
+.hr.bottom {
+  bottom: -19px;
+}
+blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: black;
+}
+blockquote:after {
+  display: block;
+  padding-left: 10px;
+  content: "\201D";
+  font-size: 80px;
+  position: absolute;
+  right: 30px;
+  bottom: -40px;
+  color: black;
+}
+
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+.about-wrapper img {
+  width: 300px;
+}
+@media screen and (max-width: 1000px) {
+  .about-wrapper {
+    width: 100%;
+  }
+  .about-p {
+    font-size: 1.1rem;
+  }
+  blockquote {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  blockquote:after,
+  blockquote:before {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  blockquote {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  blockquote:before,
+  blockquote:after {
+    size: 100px;
+  }
+  .about-p,
+  .about-wrapper h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .info-icon {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h1 {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .about-wrapper {
+    min-height: 600px;
+  }
+}
+@media screen and (min-height: 1070px) {
+  .about-wrapper {
+    min-height: 800px;
+  }
+}
+@media screen and (min-height: 1260px) {
+  .about-wrapper {
+    min-height: 1000px;
+  }
+}

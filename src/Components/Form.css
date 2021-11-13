@@ -1,0 +1,42 @@
+.form-inputs {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.form-inputs p {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  text-align: left;
+
+  color: #f00e0e;
+}
+.about-wrapper .form-label {
+  text-align: left;
+}
+.form-label {
+  margin-bottom: 6px;
+  color: black;
+}
+
+.form-input {
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.form-input::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+@media screen and (max-width: 390px) {
+  .form-inputs p {
+    top: 35px;
+  }
+}

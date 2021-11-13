@@ -1,0 +1,10 @@
+.carouselStyle{
+    max-width:1000px;
+    opacity: 1;
+}
+@media screen and (max-width: 800px) {
+    .carouselStyle{
+        min-width: 600px;
+    }
+  }
+  
