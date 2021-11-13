@@ -2,7 +2,7 @@ Pilnai funkcionuojanti "Fundamental" prekinio ženklo elektroninė parduotuvė
 
 Tinklalapis patalpintas, naudojantis Firebase hosting'u
 
-Tinklalapi pamatyti galima čia: https://kursinis-b4f6c.web.app/
+Tinklalapį pamatyti galima čia: https://kursinis-b4f6c.web.app/
 
 Tinklalapis turi registravimosi, prisijungimo, rušiavimo, rikiavimo, paieškos funkcijas
 
