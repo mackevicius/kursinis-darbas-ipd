@@ -4,7 +4,7 @@ Tinklalapis patalpintas, naudojantis Firebase hosting'u
 
 Tinklalapį pamatyti galima čia: https://kursinis-b4f6c.web.app/
 
-Tinklalapis turi registravimosi, prisijungimo, rušiavimo, rikiavimo, paieškos funkcijas
+Tinklalapis turi registravimosi, prisijungimo, rūšiavimo, rikiavimo, paieškos funkcijas
 
 Prisijungimas bei registracija padaryti, naudojantis Firebase Authentication paslauga
 
